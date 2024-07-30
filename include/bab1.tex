@@ -1,0 +1,61 @@
+% \fancyhf{} 
+% \fancyfoot[R]{\thepage}
+
+\chapter{PENDAHULUAN}
+%\thispagestyle{plain} % Halaman pertama bab menggunakan gaya plain
+
+\section{Latar Belakang}
+% Menambahkan lorem ipsum
+
+\par Perkembangan teknologi UAV (\textit{Unmanned Aerial Vehicle}) atau \textit{Drone} dalam
+beberapa tahun terakhir telah membuka peluang baru dalam bidang pemetaan dan pemodelan 3D. Teknologi \textit{drone} sangat berguna dan \textit{cost-effective} dalam pemetaan kontur lahan, terutama untuk mempercepat proses pendaftaran tanah secara sistematis \citep{stefano2020pemanfaatan}. Dengan kemampuannya untuk terbang rendah dan mengambil gambar/citra beresolusi tinggi, UAV/\textit{Drone} menawarkan metode akuisisi data yang lebih efisien, hemat biaya, dan bisa menjangkau daerah yang sulit diakses oleh metode survei tradisional. Penggunaan \textit{drone} untuk akuisisi gambar telah terbukti efektif dalam berbagai aplikasi \citep{suryan2022analisa}. Salah satu aplikasi utama dari teknologi UAV/\textit{Drone} adalah dalam pembuatan peta dan model 3D untuk berbagai keperluan seperti pertanian presisi, manajemen sumber daya alam, perencanaan tata ruang, konstruksi, arkeologi, dan lain sebagainya.
+
+Saat ini, Universitas Syiah Kuala (USK) telah mengusulkan pengurusan sertifikat tanah kampus II. Hal tersebut dikarenakan pembangunan fasilitas pendidikan di Kampus I USK yang memiliki lahan seluas 131 hektar di Desa/Kelurahan Kopelma Darussalam, Kecamatan Syiah Kuala, Kota Banda Aceh, telah berkembang pesat, dan padatnya bangunan di Kampus I membuat sulitnya pengembangan kampus dari segi penataan dan pemanfaatan ruang. Maka dari itu dalam hal perencanaan tata ruang diperlukan pemanfaatan data citra yang beresolusi tinggi dari UAV untuk dapat dilakukannya analisis terhadap perubahan lahan. Penelitian ini akan memanfaatkan data citra resolusi tinggi dari \textit{Unmanned Aerial Vehicle} (UAV)/\textit{Drone} pada tahun 2022 di area Kecamatan Mesjid Raya, Kabupaten Aceh Besar. 
+
+Namun, untuk menghasilkan produk akhir yang akurat dan berkualitas tinggi, diperlukan metode yang tepat dalam melakukan akuisisi data serta pengolahan citra yang diperoleh dari UAV/\textit{Drone}. Proses akuisisi data melibatkan perencanaan jalur terbang UAV/\textit{Drone}, parameter pengambilan gambar, serta teknik penerbangan yang sesuai dengan area dan kondisi lapangan. Setelah data berupa citra diperoleh, langkah selanjutnya adalah melakukan pemotongan dan penjajaran (mosaik) pada citra-citra tersebut untuk menghasilkan satu citra gabungan yang utuh dan tergeoreferensi. Dalam proses mosaik citra, terdapat beberapa perangkat lunak populer yang dapat digunakan seperti PIX4Dmapper, Agisoft Metashape, dan WebODM. Pada penelitian ini, penulis memilih untuk menggunakan Agisoft metashape dan PIX4D dibandingkan perangkat lunak lainnya. Masing-masing perangkat lunak memiliki kelebihan dan kekurangan tersendiri dalam hal algoritma penjajaran, kemampuan pengolahan data, dan fitur-fitur yang ditawarkan. Agisoft metashape memiliki antarmuka yang mudah digunakan dan fitur-fitur canggih membuatnya menjadi alat yang berharga bagi profesional dan mahasiswa \citep{rozak2020struktur}. Namun, diperlukan penelitian lebih lanjut untuk mengeksplorasi potensi penuhnya dan membandingkannya dengan perangkat lunak lain di bidang ini. Perangkat lunak PIX4Dmapper dikenal untuk kemampuannya yang unggul dalam membuat mosaik berkualitas tinggi dari gambar udara \citep{ardhiman2021rancang}. Oleh karena itu, perlu dilakukan evaluasi dan perbandingan untuk menentukan perangkat lunak mana yang menghasilkan mosaik citra terbaik untuk digunakan dalam berbagai aplikasi pemetaan dan pemodelan 3D. 
+
+Berdasarkan latar belakang tersebut, penulis berencana untuk melakukan penelitian tentang “Analisis Akuisisi Data dan Mosaik Citra Resolusi Tinggi Kawasan Lahan Kampus II Universitas Syiah Kuala di Kecamatan Mesjid Raya, Aceh Besar.” yang bertujuan untuk
+mengkaji prosedur akuisisi data menggunakan UAV/\textit{Drone}, mengembangkan metode
+optimal untuk mosaik citra, serta membandingkan kinerja perangkat lunak PIX4Dmapper dan Agisoft Metashape dalam menghasilkan mosaik citra berkualitas tinggi.
+
+
+\section{Rumusan Masalah}
+Berdasarkan latar belakang di atas, permasalahan dalam penelitian ini dapat dirumuskan sebagai berikut:
+\begin{enumerate}
+	\item Bagaimana prosedur yang tepat dalam melakukan akuisisi data menggunakan teknologi UAV/\textit{Drone}?
+	\item Bagaimana metode untuk melakukan mosaik pada citra-citra yang telah diambil dari udara?
+	\item Bagaimana membandingkan dan mengevaluasi kinerja perangkat lunak PIX4Dmapper dan Agisoft Metashape dalam menghasilkan mosaik citra terbaik?
+ 
+\end{enumerate}
+
+\section{Tujuan Penelitian}
+Berdasarkan rumusan masalah yang telah disebutkan sebelumnya, maka dapat dipaparkan tujuan dari penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+	\item Menganalisis tahapan akuisisi data menggunakan UAV/\textit{Drone} secara sistematis.
+	\item Melakukan mosaik pada citra-citra beresolusi tinggi yang diambil dari udara menggunakan UAV/\textit{Drone}.
+	\item Membandingkan dan mengevaluasi hasil mosaik citra yang dihasilkan oleh perangkat lunak PIX4Dmapper dan Agisoft Metashape untuk mendapatkan solusi terbaik dalam melakukan mosaik citra.
+
+\end{enumerate}
+
+
+\section{Manfaat Penelitian}
+Adapun manfaat dari penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+	\item Memberikan pemahaman dan panduan praktis tentang tahapan melakukan akuisisi data menggunakan UAV/\textit{Drone}. Hal ini bermanfaat bagi siapa saja yang ingin menggunakan teknologi UAV/\textit{Drone} untuk keperluan pemetaan atau pengambilan data dari udara.
+
+	\item Menghasilkan metode dan prosedur yang efektif dalam melakukan mosaik pada citra beresolusi tinggi yang diambil dengan UAV/\textit{Drone}. Mosaik citra merupakan proses penting dalam menghasilkan peta atau model 3D dari data yang diperoleh oleh UAV/\textit{Drone}.
+
+	\item Memberikan evaluasi dan perbandingan objektif antara dua perangkat lunak populer untuk pemrosesan data UAV/\textit{Drone}, yaitu PIX4Dmapper dan Agisoft Metashape. Hasil ini bermanfaat bagi pengguna untuk memilih perangkat lunak yang paling sesuai dengan kebutuhan mereka dalam menghasilkan mosaik citra terbaik.
+
+        \item Secara umum, penelitian ini berkontribusi dalam mengembangkan pengetahuan dan praktik terbaik dalam memanfaatkan teknologi UAV/\textit{Drone} untuk pemetaan dan pemodelan 3D. Hal ini bermanfaat bagi berbagai sektor seperti pertanian, lingkungan, konstruksi, arkeologi, dan lain-lain yang membutuhkan data spasial akurat dan efisien.
+
+\end{enumerate}
+
+
+
+% Baris ini digunakan untuk membantu dalam melakukan sitasi
+% Karena diapit dengan comment, maka baris ini akan diabaikan
+% oleh compiler LaTeX.
+\begin{comment}
+\bibliography{daftar-pustaka}
+\end{comment}
